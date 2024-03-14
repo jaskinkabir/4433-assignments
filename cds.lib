@@ -1,3 +1,4 @@
 INCLUDE /dfs/org/Holleman-Coursework/pdks/cadence_pdks/gpdk045_v_6_0/cds.lib
 DEFINE jk4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/jk4433
 DEFINE Rj4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433
+DEFINE RJ4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433

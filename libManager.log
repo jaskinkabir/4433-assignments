@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/02/2021 23:23 (sjfdcl1073) $
 \o Sub version:		sub-version  s195 
-\o Arguments:		-unmapped -mpssession virtuoso26706 -mpshost lws5047.mosaic.uncc.edu 
+\o Arguments:		-unmapped -mpssession virtuoso27620 -mpshost lws5047.mosaic.uncc.edu 
 \o Working Directory:	lws5047.mosaic.uncc.edu:/nfs/users/jkabir/linux/cadence6/gpdk045/inverter
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -13,7 +13,36 @@
 \o Library Manager customization server connected.
 \a nrResizeWindow(cdsLibManager list(477 433 602 491))
 \a nrSetCurrentWindow(cdsLibManager)
+\w Warning: The directory: '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433' does not exist
+\w 	but was defined in libFile '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib' for Lib 'Rj4433'.
 \a nrResizeWindow(cdsLibManager list(477 433 602 491))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(524 370 507 559))
+\a NewLibShell->newLibNameText->value = "RJ4433"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(638 612 281 133))
+\o Created new library "RJ4433" at /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433.
+\a nrSetCurrentWindow(cdsLibManager)
+\w Warning: The directory: '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433' does not exist
+\w 	but was defined in libFile '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib' for Lib 'Rj4433'.
+\a nrResizeWindow(workingDialogForm list(0 0 281 133))
+\a nrResizeWindow(NewLibShell list(0 0 507 559))
+\w Warning: The directory: '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433' does not exist
+\w 	but was defined in libFile '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib' for Lib 'Rj4433'.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1132 417 602 491))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1091 411 602 491))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "RJ4433"
+\a cdsLibManager->libLineEdit->value = "RJ4433"
 \a cdsLibManager->libListBox->value = "jk4433"
 \a cdsLibManager->libLineEdit->value = "jk4433"
 \a cdsLibManager->cellListBox->value = "dff-bench"
@@ -27,27 +56,33 @@
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "jk4433"
-\a cdsLibManager->libLineEdit->value = "jk4433"
-\a cdsLibManager->cellListBox->value = "dff-bench"
-\a cdsLibManager->cellLineEdit->value = "dff-bench"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "d-flip-flop"
 \a cdsLibManager->cellLineEdit->value = "d-flip-flop"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "d-latch"
+\a cdsLibManager->cellLineEdit->value = "d-latch"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "d-flip-flop"
+\a cdsLibManager->cellLineEdit->value = "d-flip-flop"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "d-flip-flop"
+\a cdsLibManager->cellLineEdit->value = "d-flip-flop"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -58,6 +93,8 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
+\w Warning: The directory: '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433' does not exist
+\w 	but was defined in libFile '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib' for Lib 'Rj4433'.
 \a cdsLibManager->libListBox->value = "jk4433"
 \a cdsLibManager->libLineEdit->value = "jk4433"
 \a cdsLibManager->cellListBox->value = "d-flip-flop"
@@ -69,33 +106,20 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "d-latch"
 \a cdsLibManager->cellLineEdit->value = "d-latch"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "d-latch"
 \a cdsLibManager->cellLineEdit->value = "d-latch"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \o MPS request: edit design
@@ -104,99 +128,16 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
+\w Warning: The directory: '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433' does not exist
+\w 	but was defined in libFile '/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib' for Lib 'Rj4433'.
 \a cdsLibManager->libListBox->value = "jk4433"
 \a cdsLibManager->libLineEdit->value = "jk4433"
 \a cdsLibManager->cellListBox->value = "d-latch"
 \a cdsLibManager->cellLineEdit->value = "d-latch"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "d-flip-flop"
-\a cdsLibManager->cellLineEdit->value = "d-flip-flop"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff-bench"
-\a cdsLibManager->cellLineEdit->value = "dff-bench"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "d-latch"
-\a cdsLibManager->cellLineEdit->value = "d-latch"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "st_inv_bench"
-\a cdsLibManager->cellLineEdit->value = "st_inv_bench"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "st_sqrwv"
-\a cdsLibManager->viewLineEdit->value = "st_sqrwv"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(416 409 602 491))
-\a nrResizeWindow(cdsLibManager list(309 380 602 491))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(372 383 602 491))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "jk4433"
-\a cdsLibManager->libLineEdit->value = "jk4433"
-\a cdsLibManager->cellListBox->value = "st_inv_bench"
-\a cdsLibManager->cellLineEdit->value = "st_inv_bench"
-\a cdsLibManager->viewListBox->value = "st_sqrwv"
-\a cdsLibManager->viewLineEdit->value = "st_sqrwv"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "st_sqrwv"
-\a cdsLibManager->viewLineEdit->value = "st_sqrwv"

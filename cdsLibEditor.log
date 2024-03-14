@@ -1,0 +1,17 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 06/02/2021 23:25 (sjfdcl1073) $
+\o Sub version:		sub-version  s195 
+\o Arguments:		-cdslib /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib -mpssession virtuoso5003 -mpshost lws5047.mosaic.uncc.edu 
+\o Working Directory:	lws5047.mosaic.uncc.edu:/nfs/users/jkabir/linux/cadence6/gpdk045/inverter
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrResizeWindow(cdsLibEditor list(0 24 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(1842 704 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(1796 698 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(1789 696 500 400))
+\a exit(0)
