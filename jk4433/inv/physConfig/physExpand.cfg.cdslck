@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jkabir
+HostName                       lws5031.mosaic.uncc.edu
+ProcessIdentifier              20183
+ProcessCreationTime_UTC        1705678722
+ProcessCreationTime_Readable   Fri Jan 19 10:38:42 2024 EST
+AppIdentifier                  /opt/coe/cadence2021/cadence/IC618/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/jk4433/inv/physConfig/physExpand.cfg
+TimeEditLocked                 Fri Feb  9 10:33:03 2024 EST
