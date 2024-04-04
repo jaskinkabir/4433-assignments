@@ -1,7 +1,7 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 06/02/2021 23:25 (sjfdcl1073) $
 \o Sub version:		sub-version  s195 
-\o Arguments:		-cdslib /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/cds.lib -mpssession virtuoso5003 -mpshost lws5047.mosaic.uncc.edu 
-\o Working Directory:	lws5047.mosaic.uncc.edu:/nfs/users/jkabir/linux/cadence6/gpdk045/inverter
+\o Arguments:		-cdslib /nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/cds.lib -mpssession virtuoso24364 -mpshost lws5042.mosaic.uncc.edu 
+\o Working Directory:	lws5042.mosaic.uncc.edu:/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		5.9.1
@@ -9,9 +9,59 @@
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(1842 704 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 "RJ4433"
+\a nrListItemAction(cdsLibEditor->mainTable 8 1)
+\o Active cell: 8 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 ""
+\a nrListItemAction(cdsLibEditor->mainTable 6 1)
+\o Active cell: 6 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433"
+\a cdsLibEditor->editUndoButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 ""
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 "RJ4433"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 8 1)
+\o Active cell: 8 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433"
+\a nrListItemAction(cdsLibEditor->mainTable 7 1)
+\o Active cell: 7 1 "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/jk4433"
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(cdsLibEditor list(1796 698 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 6 0)
+\o Active cell: 6 0 "Rj4433"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 6 1)
+\o Active cell: 6 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433"
+\a nrListItemAction(cdsLibEditor->mainTable 5 1)
+\o Active cell: 5 1 "./gpdk045"
+\a nrListItemAction(cdsLibEditor->mainTable 7 0)
+\o Active cell: 7 0 ""
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(0 24 531 513))
+\a newLibraryDialog->cancelButton->value = t
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(cdsLibEditor list(1789 696 500 400))
+\a nrResizeWindow(newLibraryDialog list(0 0 531 513))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(0 24 531 513))
+\a newLibraryDialog->libraryListBox->value = "RJ4433"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "RJ4433"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 7 0 "RJ4433")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(newLibraryDialog list(0 0 531 513))
+\a cdsLibEditor->fileSaveButton->value = t
 \a exit(0)

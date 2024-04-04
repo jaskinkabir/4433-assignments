@@ -1,9 +1,6 @@
+# File Created by rjock at Thu Apr  4 17:04:02 2024
+# assisted by CdsLibEditor
 INCLUDE /dfs/org/Holleman-Coursework/pdks/cadence_pdks/gpdk045_v_6_0/cds.lib
 DEFINE jk4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/jk4433
-DEFINE Rj4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433
-<<<<<<< HEAD
-DEFINE RJ4433 /nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/RJ4433
 DEFINE jk4433 /nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/jk4433
-=======
-DEFINE RJ4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433
->>>>>>> 5576b5a4f22063c49a82bc2e8dfad4d8a37552d2
+DEFINE RJ4433 RJ4433
