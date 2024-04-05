@@ -9,58 +9,351 @@
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrListItemAction(cdsLibEditor->mainTable 8 0)
-\o Active cell: 8 0 "RJ4433"
-\a nrListItemAction(cdsLibEditor->mainTable 8 1)
-\o Active cell: 8 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433"
-\a cdsLibEditor->editDeletePopupButton->value = t
-\a nrListItemAction(cdsLibEditor->mainTable 9 0)
-\o Active cell: 9 0 ""
-\a nrListItemAction(cdsLibEditor->mainTable 6 1)
-\o Active cell: 6 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433"
-\a cdsLibEditor->editUndoButton->value = t
-\a nrListItemAction(cdsLibEditor->mainTable 9 0)
-\o Active cell: 9 0 ""
-\a nrListItemAction(cdsLibEditor->mainTable 8 0)
-\o Active cell: 8 0 "RJ4433"
-\a cdsLibEditor->editDeletePopupButton->value = t
-\a nrListItemAction(cdsLibEditor->mainTable 8 1)
-\o Active cell: 8 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/RJ4433"
-\a nrListItemAction(cdsLibEditor->mainTable 7 1)
-\o Active cell: 7 1 "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/jk4433"
+\a nrResizeWindow(cdsLibEditor list(1 53 500 400))
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 6 0)
-\o Active cell: 6 0 "Rj4433"
-\a cdsLibEditor->editDeletePopupButton->value = t
-\a nrListItemAction(cdsLibEditor->mainTable 6 1)
-\o Active cell: 6 1 "/nfs/users/jkabir/linux/cadence6/gpdk045/inverter/Rj4433"
-\a nrListItemAction(cdsLibEditor->mainTable 5 1)
-\o Active cell: 5 1 "./gpdk045"
-\a nrListItemAction(cdsLibEditor->mainTable 7 0)
-\o Active cell: 7 0 ""
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 8 0)
+\o Active cell: 8 0 ""
 \a cdsLibEditor->editAddLibButton->value = t
 \a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments"
 \a newLibraryDialog->useMappedName->value = nil
 \a nrSetWindowVisibility(newLibraryDialog "show")
 \a nrSetCurrentWindow(newLibraryDialog)
-\a nrResizeWindow(newLibraryDialog list(0 24 531 513))
-\a newLibraryDialog->cancelButton->value = t
-\a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(newLibraryDialog list(0 0 531 513))
-\a nrSetCurrentWindow(cdsLibEditor)
-\a cdsLibEditor->editAddLibButton->value = t
-\a nrSetCurrentWindow(newLibraryDialog)
-\a nrResizeWindow(newLibraryDialog list(0 24 531 513))
-\a newLibraryDialog->libraryListBox->value = "RJ4433"
-\a newLibraryDialog->useMappedName->value = t
-\a newLibraryDialog->libraryName->value = "RJ4433"
+\a nrResizeWindow(newLibraryDialog list(0 45 531 513))
+\a newLibraryDialog->libraryName->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/GSCLIB045/oa22/gsclib045"
+\a nrDialogAccept(newLibraryDialog)
 \a newLibraryDialog->okButton->value = t
-\a nrListItemRename(cdsLibEditor->mainTable, 7 0 "RJ4433")
+\o ERROR (CLE-217): Library "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/GSCLIB045/oa22/gsclib045" is invalid within the current namespace "CDBA". \n\nRe-enter the library following the rules for the namespace. 
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(newLibraryDialog list(0 0 531 513))
+\a nrResizeWindow(errorDialog list(0 157 1092 134))
+\a nrSetCurrentWindow(errorDialog)
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(errorDialog list(0 0 1092 134))
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->libraryName->value = ""
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(0 45 531 513))
+\a newLibraryDialog->filePathComboBox->value = ""
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6"
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6"
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux"
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs"
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs"
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/"
+\a newLibraryDialog->dirListWidget->value = "dfs"
+\a newLibraryDialog->filePathComboBox->value = "//dfs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 5 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "org"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "Holleman-Coursework"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework"
+\a nrListItemAction(newLibraryDialog->dirListWidget 5 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "cadence_libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/cadence_libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->libraryListBox->value = "ecgr4433lib"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "ecgr4433lib"
+\a newLibraryDialog->dirListWidget->value = ".."
 \a newLibraryDialog->libraryListBox->value = nil
 \a newLibraryDialog->useMappedName->value = nil
 \a newLibraryDialog->libraryName->value = ""
-\a nrListItemAction(cdsLibEditor->mainTable 8 0)
-\o Active cell: 8 0 ""
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/cadence_libs/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "bin"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/bin"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/bin/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "pdks"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks"
+\a nrListItemAction(newLibraryDialog->dirListWidget 4 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "cadence_pdks"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "gpdk045_v_6_0"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/gpdk045_v_6_0"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/gpdk045_v_6_0/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "cadence_pdks"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "lan"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "flow"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "t1u1"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "reference_libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "GPDK045"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "gsclib045_svt_v4.4"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "GSCLIB045"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/GSCLIB045"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "oa22"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/GSCLIB045/oa22"
+\a nrListItemAction(newLibraryDialog->dirListWidget 6 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->libraryListBox->value = "gsclib045"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "gsclib045"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 8 0 "gsclib045")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(newLibraryDialog list(0 0 531 513))
+\a nrListItemAction(cdsLibEditor->mainTable 9 1)
+\o Active cell: 9 1 ""
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 ""
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments"
+\a newLibraryDialog->filePathComboBox->value = ""
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments"
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(0 45 531 513))
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/gdpk045"
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6"
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6/.."
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/cadence6"
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux"
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/linux/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/rjock/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/users/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/nfs"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/nfs/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "dfs"
+\a newLibraryDialog->filePathComboBox->value = "//dfs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 5 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "org"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->filePathComboBox->value = "/dfs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org"
+\a newLibraryDialog->dirListWidget->value = "Holleman-Coursework"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework"
+\a nrListItemAction(newLibraryDialog->dirListWidget 5 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "cadence_libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/cadence_libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/cadence_libs/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "bin"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/bin"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/bin/.."
+\a nrListItemAction(newLibraryDialog->dirListWidget 0 0)
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework"
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "pdks"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks"
+\a nrListItemAction(newLibraryDialog->dirListWidget 4 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "cadence_pdks"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = ".."
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/.."
+\a newLibraryDialog->dirListWidget->value = "lan"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "flow"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "t1u1"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "reference_libs"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "GPDK045"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "gsclib045_svt_v4.4"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4"
+\a nrListItemAction(newLibraryDialog->dirListWidget 1 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "gsclib045_tech"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045_tech"
+\a nrListItemAction(newLibraryDialog->dirListWidget 3 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->dirListWidget->value = "oa22"
+\a newLibraryDialog->filePathComboBox->value = "/dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045_tech/oa22"
+\a nrListItemAction(newLibraryDialog->dirListWidget 3 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->libraryListBox->value = "gsclib045_tech"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "gsclib045_tech"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 9 0 "gsclib045_tech")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 10 0)
+\o Active cell: 10 0 ""
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrResizeWindow(newLibraryDialog list(0 0 531 513))
 \a cdsLibEditor->fileSaveButton->value = t

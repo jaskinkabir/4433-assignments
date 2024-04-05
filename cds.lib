@@ -1,6 +1,8 @@
-# File Created by rjock at Thu Apr  4 17:04:02 2024
+# File Created by rjock at Thu Apr  4 17:23:49 2024
 # assisted by CdsLibEditor
 INCLUDE /dfs/org/Holleman-Coursework/pdks/cadence_pdks/gpdk045_v_6_0/cds.lib
 DEFINE jk4433 /nfs/users/jkabir/linux/cadence6/gpdk045/inverter/jk4433
 DEFINE jk4433 /nfs/users/rjock/linux/cadence6/gdpk045/ecgr4433/4433-assignments/jk4433
 DEFINE RJ4433 RJ4433
+DEFINE gsclib045 /dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/GSCLIB045/oa22/gsclib045
+DEFINE gsclib045_tech /dfs/org/Holleman-Coursework/pdks/cadence_pdks/libs/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045_tech/oa22/gsclib045_tech
